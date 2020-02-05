@@ -37,11 +37,15 @@ def add(*args):
 
 def log10(x):
 	"""Return a base-10 logarithm of x"""
-	
+
 	return math.log10(x)
 
 def raise_to_power(x, y):
         return x**y
+
+def niner(x):
+	"Adds 9 to an argument"
+	return x + 9
 
 #
 # The dictionary that maps the command-line name of the operation,
@@ -52,7 +56,8 @@ operators = {
 	'add': add,
 	'sum': add,
 	'log10': log10,
-        'power': raise_to_power
+        'power': raise_to_power,
+		'niner': niner
 }
 
 if __name__ == "__main__":
