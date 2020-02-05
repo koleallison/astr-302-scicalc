@@ -37,11 +37,16 @@ def add(*args):
 
 def log10(x):
 	"""Return a base-10 logarithm of x"""
-	
+
 	return math.log10(x)
 
 def raise_to_power(x, y):
         return x**y
+
+
+def exp(x):
+	"""Return the constant "e" raised to the input value"""
+	return math.e**x
 
 #
 # The dictionary that maps the command-line name of the operation,
