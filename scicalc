@@ -43,6 +43,19 @@ def log10(x):
 def raise_to_power(x, y):
         return x**y
 
+def sin(x):
+	"""Return sin of x"""
+	return math.sin(x)
+
+def cos(x):
+	"""Return cos of x"""
+	return math.cos(x)
+
+def tan(x):
+	"""Return tan of x"""
+	return math.tan(x)
+
+
 #
 # The dictionary that maps the command-line name of the operation,
 # to the function that performs it. There can be multiple names
@@ -52,7 +65,10 @@ operators = {
 	'add': add,
 	'sum': add,
 	'log10': log10,
-        'power': raise_to_power
+        'power': raise_to_power,
+	'sin': sin,
+	'cos': cos,
+	'tan': tan
 }
 
 if __name__ == "__main__":
