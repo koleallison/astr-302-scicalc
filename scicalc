@@ -62,6 +62,7 @@ if __name__ == "__main__":
 	try:
 		op = sys.argv[1]
 		my_args = []
+		#allowing for e an pi as inputs
 		for arg in sys.argv[2:]:
 			if arg == 'e':
 				my_args.append(2.718281828459)
