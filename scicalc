@@ -44,8 +44,9 @@ def raise_to_power(x, y):
         return x**y
 
 def inverse(x):
-	return 1/x
 	"""Returns whatever input as one over the input"""
+	return 1/x
+	
 
 #
 # The dictionary that maps the command-line name of the operation,
@@ -56,9 +57,8 @@ operators = {
 	'add': add,
 	'sum': add,
 	'log10': log10,
-        'power': raise_to_power
-	'inverse': inverses_number
-	"""Added the operator 'inverse' to invert any input"""
+        'power': raise_to_power,
+	'inverse': inverse
 }
 
 if __name__ == "__main__":
