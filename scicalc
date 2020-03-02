@@ -78,9 +78,8 @@ def tan(x):
 	"""Return tan of x (x is in radians)"""
 	return math.tan(x)
 
-
-"""Finds the natural log of some number"""
 def natural_log(x):
+    """Finds the natural log of some number"""
     return math.log(x)
 #
 # The dictionary that maps the command-line name of the operation,
