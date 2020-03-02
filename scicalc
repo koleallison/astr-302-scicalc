@@ -93,6 +93,10 @@ def inverse(x):
 	"""Returns whatever input as one over the input"""
 	return 1/x
 	
+def niner(x):
+	"Adds 9 to an argument"
+	return x + 9
+
 #
 # The dictionary that maps the command-line name of the operation,
 # to the function that performs it. There can be multiple names
@@ -113,7 +117,8 @@ operators = {
 	'tan': tan,
         'naturallog': natural_log,
 	'absolute_value': abs,
-	'inverse': inverse
+	'inverse': inverse,
+	'niner': niner
 }
 
 if __name__ == "__main__":
