@@ -40,8 +40,10 @@ def log10(x):
 	
 	return math.log10(x)
 
-def raise_to_power(x, y):
-        return x**y
+
+def divide(x, y):
+	"""Divides argument x by argument y"""
+	return x/y
 
 #
 # The dictionary that maps the command-line name of the operation,
@@ -52,7 +54,7 @@ operators = {
 	'add': add,
 	'sum': add,
 	'log10': log10,
-        'power': raise_to_power
+	'divide': divide,
 }
 
 if __name__ == "__main__":
