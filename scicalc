@@ -88,6 +88,11 @@ def tan(x):
 def natural_log(x):
     """Finds the natural log of some number"""
     return math.log(x)
+
+def inverse(x):
+	"""Returns whatever input as one over the input"""
+	return 1/x
+	
 #
 # The dictionary that maps the command-line name of the operation,
 # to the function that performs it. There can be multiple names
@@ -108,6 +113,7 @@ operators = {
 	'tan': tan,
         'naturallog': natural_log,
 	'absolute_value': abs,
+	'inverse': inverse
 }
 
 if __name__ == "__main__":
