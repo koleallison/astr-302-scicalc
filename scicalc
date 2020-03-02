@@ -13,6 +13,9 @@ def die_with_usage(message):
 	for (op, func) in operators.items():
 		print("    {}: {}".format(op, func.__doc__), file=sys.stderr)
 	print("", file=sys.stderr)
+	print("note: you can also use 'pi' and 'e' as arguments, for example:\n")
+	print("    {} sin pi".format(sys.argv[0]))
+	print("", file=sys.stderr)
 	exit(-1)
 
 #
@@ -113,7 +116,17 @@ if __name__ == "__main__":
 	#
 	try:
 		op = sys.argv[1]
-		args = [ float(arg) for arg in sys.argv[2:] ]
+		my_args = []
+		#allowing for e an pi as inputs
+		for arg in sys.argv[2:]:
+			if arg == 'e':
+				my_args.append(2.718281828459)
+			elif arg == 'pi':
+				my_args.append(3.14159265)
+			else:
+				my_args.append(arg)
+
+		args = [ float(arg) for arg in my_args ]
 	except IndexError:
 		die_with_usage("Insufficient number of arguments.")
 	except ValueError as e:
