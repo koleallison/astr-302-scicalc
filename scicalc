@@ -66,6 +66,19 @@ def sub(x, y):
 	"""subtracts y from x"""
 	return x - y
 
+def sin(x):
+	"""Return sin of x (x is in radians)"""
+	return math.sin(x)
+
+def cos(x):
+	"""Return cos of x (x is in radians)"""
+	return math.cos(x)
+
+def tan(x):
+	"""Return tan of x (x is in radians)"""
+	return math.tan(x)
+
+
 #
 # The dictionary that maps the command-line name of the operation,
 # to the function that performs it. There can be multiple names
@@ -81,6 +94,9 @@ operators = {
 	'mul': multiply,
 	'sub': sub,
 	'subtract': sub,
+	'sin': sin,
+	'cos': cos,
+	'tan': tan
 }
 
 if __name__ == "__main__":
