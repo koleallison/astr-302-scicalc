@@ -97,6 +97,11 @@ def niner(x):
 	"Adds 9 to an argument"
 	return x + 9
 
+def sciNot(x):
+	"""Returns scientific notation of x value"""
+	
+	return '%.2E' % Decimal(x)
+
 #
 # The dictionary that maps the command-line name of the operation,
 # to the function that performs it. There can be multiple names
@@ -118,7 +123,8 @@ operators = {
         'naturallog': natural_log,
 	'absolute_value': abs,
 	'inverse': inverse,
-	'niner': niner
+	'niner': niner,
+	'sciNot': sciNot,
 }
 
 if __name__ == "__main__":
