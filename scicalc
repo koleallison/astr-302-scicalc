@@ -113,7 +113,17 @@ if __name__ == "__main__":
 	#
 	try:
 		op = sys.argv[1]
-		args = [ float(arg) for arg in sys.argv[2:] ]
+		my_args = []
+		#allowing for e an pi as inputs
+		for arg in sys.argv[2:]:
+			if arg == 'e':
+				my_args.append(2.718281828459)
+			elif arg == 'pi':
+				my_args.append(3.14159265)
+			else:
+				my_args.append(arg)
+
+		args = [ float(arg) for arg in my_args ]
 	except IndexError:
 		die_with_usage("Insufficient number of arguments.")
 	except ValueError as e:
