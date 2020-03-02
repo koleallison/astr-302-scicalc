@@ -100,7 +100,7 @@ def niner(x):
 def sciNot(x):
 	"""Returns scientific notation of x value"""
 	
-	return '%.2E' % Decimal(x)
+	return '%.2E' % x
 
 #
 # The dictionary that maps the command-line name of the operation,
