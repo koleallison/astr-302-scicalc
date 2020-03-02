@@ -4,6 +4,7 @@
 #
 
 import sys, math
+import numpy as np
 
 def die_with_usage(message):
 	print("\n****\n**** error: {}\n****\n".format(message), file=sys.stderr)
@@ -48,6 +49,9 @@ def log10(x):
 
 	return math.log10(x)
 
+def abs(x):
+	"""Return absolute value of the input."""
+	return np.abs(x)
 
 def divide(x, y):
 	"""Divides argument x by argument y"""
@@ -100,6 +104,7 @@ operators = {
 	'cos': cos,
 	'tan': tan,
         'naturallog': natural_log,
+	'absolute_value': abs,
 }
 
 if __name__ == "__main__":
