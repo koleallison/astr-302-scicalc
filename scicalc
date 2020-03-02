@@ -35,6 +35,14 @@ def add(*args):
 		sum += arg
 	return sum
 
+def multiply(*args):
+	"""Multiplies list of inputed sys arguments"""
+	
+	mul = 1.0
+	for arg in args:
+		mul *= arg
+	return mul
+
 def log10(x):
 	"""Return a base-10 logarithm of x"""
 
@@ -65,7 +73,8 @@ operators = {
 	'log10': log10,
 	'divide': divide,
 	'factorial': factorial,
-	'exp': exp
+	'exp': exp,
+	'mul': multiply
 }
 
 if __name__ == "__main__":
