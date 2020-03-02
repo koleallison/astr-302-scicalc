@@ -67,15 +67,15 @@ def sub(x, y):
 	return x - y
 
 def sin(x):
-	"""Return sin of x"""
+	"""Return sin of x (x is in radians)"""
 	return math.sin(x)
 
 def cos(x):
-	"""Return cos of x"""
+	"""Return cos of x (x is in radians)"""
 	return math.cos(x)
 
 def tan(x):
-	"""Return tan of x"""
+	"""Return tan of x (x is in radians)"""
 	return math.tan(x)
 
 
