@@ -13,6 +13,9 @@ def die_with_usage(message):
 	for (op, func) in operators.items():
 		print("    {}: {}".format(op, func.__doc__), file=sys.stderr)
 	print("", file=sys.stderr)
+	print("note: you can also use 'pi' and 'e' as arguments, for example:\n")
+	print("    {} sin pi".format(sys.argv[0]))
+	print("", file=sys.stderr)
 	exit(-1)
 
 #
