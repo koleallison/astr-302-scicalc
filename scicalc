@@ -79,6 +79,9 @@ def tan(x):
 	return math.tan(x)
 
 
+"""Finds the natural log of some number"""
+def natural_log(x):
+    return math.log(x)
 #
 # The dictionary that maps the command-line name of the operation,
 # to the function that performs it. There can be multiple names
@@ -96,7 +99,8 @@ operators = {
 	'subtract': sub,
 	'sin': sin,
 	'cos': cos,
-	'tan': tan
+	'tan': tan,
+        'naturallog': natural_log,
 }
 
 if __name__ == "__main__":
