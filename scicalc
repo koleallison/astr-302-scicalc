@@ -62,6 +62,10 @@ def exp(x):
 	"""Return the constant "e" raised to the input value"""
 	return math.e**x
 
+def sub(x, y):
+	"""subtracts y from x"""
+	return x - y
+
 #
 # The dictionary that maps the command-line name of the operation,
 # to the function that performs it. There can be multiple names
@@ -74,7 +78,9 @@ operators = {
 	'divide': divide,
 	'factorial': factorial,
 	'exp': exp,
-	'mul': multiply
+	'mul': multiply,
+	'sub': sub,
+	'subtract': sub,
 }
 
 if __name__ == "__main__":
